@@ -53,4 +53,9 @@ public class HealthController {
     return primeNumberService.generatePrimeNumber();
   }
 
+  @GetMapping("/generated-primes")
+  public List<String> getPrimeNumberCache() {
+    return primeNumberService.getPrimeNumberCache();
+  }
+
 }
