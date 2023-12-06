@@ -13,7 +13,7 @@ import java.security.SecureRandom;
 public class PrimeNumberService {
   private final SecureRandom secureRandom = new SecureRandom();
   public String generatePrimeNumber() {
-    BigInteger primeNumber = new BigInteger(1000, 100, secureRandom);
+    BigInteger primeNumber = new BigInteger(10, 100, secureRandom);
 
     return primeNumber.toString();
   }
